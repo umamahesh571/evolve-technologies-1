@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+        maven 'maven.15'
+    }
     environment {
         IMAGE_NAME = 'evolve-technologies-web'
         REGISTRY = 'umamahesh571'
